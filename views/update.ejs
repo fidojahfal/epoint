@@ -1,0 +1,110 @@
+<div class="container-fluid my-2">
+    <form class="form" action="/profileUpdate" method="post" id="registrationForm" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-lg-2 col-md-12 my-5">
+                <div class="row">
+                    <div class="col-12 d-flex text-center justify-content-center
+                        align-items-center">
+                        <div class="view overlay rounded-circle" id="profileImage">
+                            <img src="/picture/herp.png" class="rounded-circle avatar border brs"
+                                style="height: 145px; width: 145px;" alt="avatar">
+                            <div class="mask flex-center rgba-orange-strong">
+                                <h2 class="wtxt">Change Image</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="d-flex justify-content-center mt-3 wtxt">
+                            HERPBINTITAN
+                        </h4>
+                    </div>
+                    <div class="col-12">
+                        <h5 class="d-flex text-center justify-content-center wtxt"><b>Admin</b></h5>
+                    </div>
+                    <div class="conrtainer">
+                        <input type="file" name="photo" id="imageUpload" class="text-center center-block file-upload"
+                            capture>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 px-2 col-md-12">
+                <div class="backw container-fluid justify-content-center
+                        align-items-center py-1">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home">
+                            <div class="container my-3">
+                                <div class="row">
+                                    <div class="col-12 my-2">
+                                        <label for="Nama">
+                                            <h4 class="mb-0">Name</h4>
+                                        </label>
+                                        <input type="text" class="form-control input_user" name="name" id="first_name"
+                                            placeholder="Name" value="" disabled>
+                                        <input type="text" name="_id" class="form-control input_user" value="" hidden>
+                                    </div>
+                                    <div class="col-12 my-2">
+                                        <label for="kelas">
+                                            <h4 class="mb-0">Kelas</h4>
+                                        </label>
+                                        <div class="input-group-append">
+                                            <input type="text" class="form-control input_user" name="kelas"
+                                                placeholder="Kelas" value="" disabled>
+                                            <input type="text" class="form-control input_user" name="jurusan"
+                                                placeholder="Jurusan" value="" disabled>
+                                            <input type="text" class="form-control input_user" name="index"
+                                                placeholder="Index" value="" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12 my-2">
+                                        <label for="Jenis Kelamin">
+                                            <h4 class="mb-0">Jenis Kelamin</h4>
+                                        </label>
+                                        <input type="text" class="form-control input_user" name="jeniskelamin"
+                                            placeholder="Kelas" value="" disabled>
+                                    </div>
+                                    <div class="col-md-6 col-12 my-2">
+                                        <label for="urut">
+                                            <h4 class="mb-0">No. Urut</h4>
+                                        </label>
+                                        <input type="text" class="form-control input_user" name="absen" id="urut"
+                                            placeholder="No. Urut" value="" disabled>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <label for="username">
+                                            <h4 class="mb-0">Username</h4>
+                                        </label>
+                                        <input type="username" class="form-control input_user" name="username"
+                                            id="username" placeholder="username"
+                                            title="Input your new username if you want change your username">
+                                    </div>
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <label for="password">
+                                            <h4 class="mb-0">Password</h4>
+                                        </label>
+                                        <input type="password" class="form-control input_user" name="password"
+                                            id="password" placeholder="password"
+                                            title="Input your new password if you want change your password">
+                                    </div>
+                                    <div class="col-md-6 mt-2">
+                                        <label for="password2">
+                                            <h4 class="mb-0">Verify Password</h4>
+                                        </label>
+                                        <input type="password" class="form-control input_user" name="password2"
+                                            id="password2" placeholder="Verify" title="Enter your new password again">
+                                    </div>
+                                    <div class="col-12">
+                                        <br>
+                                        <button class="btn btnedit" name="button" type="submit">Save</button>
+                                        <button class="btn btnedit" type="reset"><i
+                                                class="glyphicon glyphicon-repeat"></i>
+                                            Reset</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
