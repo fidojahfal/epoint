@@ -5,7 +5,7 @@ const connection = mysql.createConnection({
     user: process.env.USER,
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
-    port: proccess.env.PORT,
+    port: process.env.PORT,
     dateStrings: true
 });
 connection.connect((err) => {
