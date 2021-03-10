@@ -27,5 +27,5 @@ app.use((req, res, next) => {
     res.render('404', { title: title })
 })
 
-app.listen(8080,
+app.listen($PORT,
     console.log('Start server at port 3000'));
