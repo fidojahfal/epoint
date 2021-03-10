@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const expressLayout = require('express-ejs-layouts')
 const path = require('path');
 const app = express();
+var PORT = process.env.PORT || 5000;
 
 //Body Parser
 app.use(express.urlencoded({ extended: false }))
@@ -27,5 +28,5 @@ app.use((req, res, next) => {
     res.render('404', { title: title })
 })
 
-app.listen($PORT,
+app.listen(PORT,
     console.log('Start server at port 3000'));
